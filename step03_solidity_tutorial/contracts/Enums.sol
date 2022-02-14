@@ -37,19 +37,4 @@ contract Enums {
     function verifyJuiceSize() public view returns (bool) {
         return juice == FreshJuiceSize.EXTRALARGE;
     }
-
-    // FreshJuiceSize choice;
-    // FreshJuiceSize constant defaultChoice = FreshJuiceSize.MEDIUM;
-
-    // function setLarge() public {
-    //     choice = FreshJuiceSize.LARGE;
-    // }
-
-    // function getChoice() public view returns (FreshJuiceSize) {
-    //     return choice;
-    // }
-
-    // function getDefaultChoice() public pure returns (uint256) {
-    //     return uint256(defaultChoice);
-    // }
 }
