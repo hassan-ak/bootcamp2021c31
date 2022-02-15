@@ -53,11 +53,19 @@ contract Structs {
             FundingRound.PRIVATE
         );
         FundingRoundDetails memory details3 = FundingRoundDetails(
-            20000,
+            30000,
             FundingRound.PUBLIC
         );
         allRounds.push(details1);
         allRounds.push(details2);
         allRounds.push(details3);
+    }
+
+    function getRequiredFundingForRound(uint256 _roundNumber)
+        public
+        view
+        returns (uint256)
+    {
+        return allRounds[_roundNumber].fundingRequired;
     }
 }
