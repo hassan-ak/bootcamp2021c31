@@ -40,6 +40,13 @@ async function main() {
   console.log("*** Rounds Details in Start ***");
   const response1 = await structs.allRounds(0);
   console.log("Round Details : ", response1.toString());
+
+  console.log("---------------");
+  console.log("---------------");
+  console.log("---------------");
+  console.log("*** Funding Required for specific round ***");
+  const response2 = await structs.getRequiredFundingForRound(2);
+  console.log("Funding Required : ", response2.toString());
 }
 
 // We recommend this pattern to be able to use async/await everywhere
