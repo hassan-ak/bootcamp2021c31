@@ -29,7 +29,7 @@ contract Mapping {
 
     mapping(uint256 => FundingRoundDetails) public fundingRounds;
     mapping(address => FundingRoundDetails) public userRounds;
-    mapping(address=>mapping(uint256->bool)) someMapping;
+    mapping(address => mapping(uint256 => bool)) someMapping;
     uint256 roundCounter;
 
     struct UserInfo {
